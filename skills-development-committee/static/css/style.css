@@ -8,14 +8,35 @@ body{
 }
 
 main{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white
 }
 
 .footer{
     color: white;
     font-family: cursive, 'Brush Script MT';
-    background-color: rgba(0,0,0,0.8);
+    background-color: white;
     
+}
+
+.homeImage {
+
+    width: 100%;
+    height: auto;
+    border: 2px;
+}
+
+h1,h2,h3,h4,h5 {
+    color: white;
+}
+
+.page_header{
+    text-align: center;
+    color: black;
+
+}
+
+p,h1,h2,h3,h4,h5 {
+    color: black;
 }
 
 b{

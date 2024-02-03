@@ -19,6 +19,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills Development</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/favrico.ico">
     <script src="//unpkg.com/alpinejs" defer></script>
     <script src="static/js/code.js"></script>
     <!-- Compiled and minified CSS -->
@@ -49,7 +50,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            <a class="navbar-brand mt-2 mt-lg-0" href="/"> <img src="static/images/logo.png" width="60%"/>
+            <a class="navbar-brand mt-2 mt-lg-0" href="/"> <img src="static/images/logo.png" width="60%" />
             </a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
                 data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -122,7 +123,8 @@
 
                     <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
                         style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
-                        <h3 style="color: white;">Skill Development Facilitator</h3>
+                        <h3 style="color: white;">Skill Development Facilitator</h3><br>
+                        <h3>(SDF)</h3>
                         <button href="#" class="btn btn-info" style="color: white;"
                             x-on:click="openHome('skills_development_facilitator')">Read More</button>
 
@@ -139,7 +141,8 @@
                 <div class="col-md-4">
                     <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
                         style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
-                        <h3 style="color: white;">Skill Development Committee</h3>
+                        <h3 style="color: white;">Skill Development Committee</h3><br>
+                        <h3>(SDC)</h3>
                         <button href="#" class="btn btn-info" style="color: white;"
                             x-on:click="openHome('skills_development_committee')">Read more</button>
 
@@ -154,9 +157,10 @@
 
                     <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
                         style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
-                        <h3 style="color: white;">Skills and Development Laws and Legislation</h3>
+                        <h3 style="color: white;">Skills and Development Laws and Legislation</h3><br>
+                        <h3>(SDL & L)</h3>
                         <button href="#" class="btn btn-info" style="color: white;"
-                            x-on:click="openHome('skills_development_wsp_atr')">Read more</button>
+                            x-on:click="openHome('skills_development_laws')">Read more</button>
 
 
                     </div>
@@ -281,7 +285,44 @@
                     </ul>
 
 
-                    <h2>Skills and Development facilitator content comes here</h2>
+                    <h2 style="text-align: center;">SDF</h2><br>
+                    <h3 style="text-align: center;">Learn About Our Skills and Development Facilitator</h3>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="homeImage">
+                                <img src="static/images/SDF1.JPG" />
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="homeImage">
+                                <video width="320" height="240" autoplay muted>
+                                    <source src="static/video/sdc.mp4" type="video/mp4">
+
+
+                                </video>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-4">
+                            <p>This module covers content you need to know about the skills development comiittee</p>
+                            <p>What is SDF</p>
+                            <p>The role of SDF</p>
+                            <p>How to become an SDF</p>
+                            <p>Facilitating Skills</p>
+                            <p>Researching</p>
+                            <p>Evaluating</p>
+
+                            <p style="float: right;">Click to read more</p>
+
+                        </div>
+
+                    </div>
+
 
 
                 </div>
@@ -301,7 +342,37 @@
                     </ul>
 
 
-                    <h2>Skills and Development committee content comes here</h2>
+                    <h2 style="text-align: center;">SDC</h2><br>
+                    <h3 style="text-align: center;">Learn About Our Skills and Development Committee</h3>
+
+                    <div class="row">
+
+
+                        <div class="col-md-4">
+                            <div class="homeImage">
+                                <video width="320" height="240" autoplay muted>
+                                    <source src="static/video/sdc.mp4" type="video/mp4">
+
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-8">
+                            <p>This module covers content you need to know about the skills development comiittee</p>
+                            <p>What is SDF</p>
+                            <p>The role of SDF</p>
+                            <p>How to become an SDF</p>
+                            <p>Facilitating Skills</p>
+                            <p>Researching</p>
+                            <p>Evaluating</p>
+
+                            <p style="float: right;">Click to read more</p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -312,12 +383,100 @@
                 <div x-show="skills_development_laws" x-cloak>
 
 
-                    <li class="nav-item">
-                        <a href="../skills-development-committee/index2.html" class="nav-link"
-                            aria-current="page">HOME</a>
-                    </li>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a href="../skills-development-committee/index2.html" class="nav-link"
+                                aria-current="page">HOME</a>
+                        </li>
 
-                    <h2>Skills and Development laws and Legislation content comes here</h2>
+
+                    </ul>
+
+                        <div class="page_header">
+                            <h2>SDF LAWS AND LEGISLATION</h2><br>
+                            <h3>Learn About The Related Laws To The Skills Development Committee</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Labour Laws</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Skill Development Act</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">SDC Resources</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Skill Development Levies Act</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Regulation Policies / Framework</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Structure in the Skills Landscape</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                 </div>
 
@@ -343,42 +502,55 @@
                 <div x-show="skills_development_quiz" x-cloak>
                     <li class="nav-item">
                         <a href="../skills-development-committee/index2.html" class="nav-link"
-                        aria-current="page">HOME</a>
+                            aria-current="page">HOME</a>
                     </li>
 
                     <template x-if="!username">
-                        <input type="text" x-model="currentUsername" placeholder="Enter your username">
-                        <button @click="startQuiz()">Start Quiz</button>
+                        <div>
+                            <input type="text" x-model="currentUsername" placeholder="Enter your username" />
+                            <button class="btn btn-danger" @click="saveProgress()">Take Quiz</button>
+                        </div>
+
                     </template>
                     <template x-if="username">
-                        <h2>Welcome, <span x-text="username"></span>!</h2>
-                        <template x-if="!quizInProgress">
-                            <button @click="startQuiz()">Start Quiz</button>
-                        </template>
-                        <template x-if="quizInProgress">
-                            <h3>Question: <span x-text="currentQuestionIndex + 1"></span></h3>
-                            <h4 x-text="currentQuestion"></h4>
-                            <ul>
-                                <li x-for="(option, index) in currentOptions" :key="index">
-                                    <label>
-                                        <input type="radio" x-model="selectedOption" :value="index">
-                                        <span x-text="option"></span>
-                                    </label>
-                                </li>
-                            </ul>
-                            <button @click="nextQuestion()">Next</button>
-                            <button @click="endQuiz()">End Quiz</button>
-                        </template>
-                        <template x-if="quizCompleted">
-                            <h2>Congratulations, you completed the quiz!</h2>
-                            <p>Your score: <span x-text="score"></span></p>
-                            <button @click="resetQuiz()">Take Quiz Again</button>
-                        </template>
+
+                        <div>
+                            <h2>Welcome, <span x-text="username"></span>!</h2>
+                            <template x-if="!quizInProgress">
+                                <button class="btn btn-danger" @click="startQuiz()">Start Quiz</button>
+                            </template>
+                            <template x-if="quizInProgress">
+                                <div>
+                                    <h3>Question: <span x-text="currentQuestionIndex + 1"></span></h3>
+                                    <h4 x-text="currentQuestion"></h4>
+                                    <ul>
+                                        <li x-for="(option, index) in currentOptions" :key="index">
+                                            <label>
+                                                <input type="radio" x-model="selectedOption" :value="index">
+                                                <span x-text="option"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <button @click="nextQuestion()">Next</button>
+                                    <button @click="endQuiz()">End Quiz</button>
+                                </div>
+
+                            </template>
+                            <template x-if="quizCompleted">
+                                <div>
+                                    <h2>Congratulations, you completed the quiz!</h2>
+                                    <p>Your score: <span x-text="score"></span></p>
+                                    <button @click="resetQuiz()">Take Quiz Again</button>
+                                </div>
+
+                            </template>
+                        </div>
+
                     </template>
                     <button @click="saveProgress()" x-show="username && quizInProgress">Save Progress</button>
-                
 
-            
+
+
                 </div>
 
 
@@ -404,13 +576,61 @@
                 <div x-show="skills_development_sdc_structure" x-cloak>
 
 
-                    <li class="nav-item">
-                        <a href="../skills-development-committee/index2.html" class="nav-link"
-                            aria-current="page">HOME</a>
-                    </li>
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a href="../skills-development-committee/index2.html" class="nav-link"
+                                aria-current="page">HOME</a>
+                        </li>
 
 
-                    <h2>Skills and Development Structure content comes here</h2>
+                    </ul>
+
+                        <div class="page_header">
+                            <h2>SDC STRUCTURES</h2><br>
+                            <h3>Learn About The Related SDC Structures</h3>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Department of Education</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Department of Education</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="bg-image p-5 text-center shadow-1-strong rounded mb-5 text-white"
+                                    style="background-image: url('static/images/IMG_3016.jpeg'); background-size: cover; background-repeat: no-repeat; border-radius: 40px;">
+                                    <h3 style="color: white;">Department of Education</h3>
+                                    <button href="#" class="btn btn-info" style="color: white;"
+                                        x-on:click="openHome('skills_development_facilitator')">Read More</button>
+
+                                    <br>
+
+                                </div>
+
+                            </div>
+
+                        </div>
 
                 </div>
 
@@ -447,20 +667,6 @@
                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </div>
         </section>
 
@@ -469,27 +675,66 @@
 
     </main>
 
-    <br>
-    <div class="container footer">
+    <br><br>
+    <div class="container">
+        <div class="footer">
 
-        <section>
+            <section>
+    
+                <footer class="page-footer">
+    
+                    <!-- <div class="footer-copyright"> -->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="static/images/logo.png" width=""><br>
+                                <p>
+                                    We respect your right to privacy and therefore aim to ensure that we comply with the legal requirement of the POPI Act which regulates the manner in which we collect, process, store, share and destroy any personal information which you have provided to us.
+                                </p>
+    
+                            </div>
+    
+                            <div class="col-md-3">
+                                <p>Quick Links</p>
+                                <a href="">About Us</a><br>
+                                <a href="">Discretionary Grants</a><br>
+                                <a href="">Career Guidance</a><br>
+                                <a href="">Tenders</a><br>
+                                <a href="">Faq</a><br>
+                                <a href="">Contact Us</a><br>
+    
+                            </div>
+    
+                            <div class="col-md-3">
+                                <p>Website Use</p>
+                                <a href="">PAIA - This manual has been prepared in terms of the section 51 of the Promotion of Access to Information Act</a>
+                                
+                                
+    
+                            </div>
+    
+                            <div class="col-md-3">
+                                <p>Join the social conversation</p>
+                                <a href="">Connect with us on social media and stay up to date with our latest news and updates</a><br><br><br>
+                                <div style="float: right;">
+                                    <a href="http://www.twitter.com/CHIETA_SETA"  target="_blank" rel="noopener"  >
+                                        <img src="static/images/fb.JPG"/></a>
+                                    <a href=""><img src="static/images/tw.JPG"/></a>
+                                    <a href=""><img src="static/images/ig.JPG"/></a>
+                                    <a href=""><img src="static/images/ln.JPG"/></a>
 
-            <footer class="page-footer">
-
-                <div class="footer-copyright">
-                    <div class="row">
-                        <div class="footer" style="text-align: center;">
-                            © 2023 Copyright Reserved<br>
-
-                            <a class="footer" href="#!">UJ & ACCENTURE WORK READINESS PROGRAM</a><br>
-                            <a class="footer" target="_blank"
-                                href="https://github.com/Fabchirajoul/model_with_flask.git">SOURCE CODE LINK</a>
+                                </div>
+                                
+                                
+    
+                            </div>
+    
                         </div>
-                    </div>
-                </div>
-            </footer>
+                    <!-- </div> -->
+                </footer>
+    
+            </section>
+        </div>
 
-        </section>
     </div>
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>

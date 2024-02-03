@@ -60,14 +60,13 @@ document.addEventListener("alpine:init", () => {
         } else if (currentSection == "skills_development_laws") {
           this.skills_development_facilitator = false;
           this.skills_development_committee = false;
-
           this.skills_development_wsp_atr = false;
           this.skills_development_laws = true;
+          this.skills_development_sdc_structure = false;
+          this.skills_development_sdc_resources = false;
           this.skills_development_quiz = false;
           this.skills_development_sdc_word_game = false;
           this.skills_development_home = false;
-          this.skills_development_sdc_structure = false;
-          this.skills_development_sdc_resources = false;
           this.skills_development_add_quick_link = false;
         } else if (currentSection == "skills_development_quiz") {
           this.skills_development_facilitator = false;
@@ -138,7 +137,14 @@ document.addEventListener("alpine:init", () => {
         }
       },
 
-      init() {},
+      init() {
+        //load the save user info when page reloads
+        this.loadProgress()
+      },
+
+
+      
+
       username: "",
       currentUsername: "",
       quizInProgress: false,
@@ -147,31 +153,35 @@ document.addEventListener("alpine:init", () => {
       selectedOption: null,
       score: 0,
       questions: [
-        {
-          question: "Question 1?",
-          options: ["Option 1", "Option 2", "Option 3"],
-          answer: 0,
-        },
-        {
-          question: "Question 2?",
-          options: ["Option A", "Option B", "Option C"],
-          answer: 1,
-        },
+
+        {question: "What is the capital of France?", options: ["Pretoria", "Paris", "Johannesburg"],answer: 1,},
+        {question: "Who wrote 'To Kill a Mockingbird'?", options: ["Me", "You", "Us"],answer: 1,},
+        {question: "What is the chemical symbol for gold?", options: ["Na", "Ag", "Au"],answer: 2,},
+        {question: "WHat does CHieta do ?", options: ["Chemical enterprise", "Pilot", "Marketing"],answer: 0,},
+        {question: "Who did chieta contract do fix the web page ?", options: ["UJ", "Accenture", "None"],answer: 0,},
+        {question: "WHo is the contact person", options: ["Paris", "Prof", "Fabchi"],answer: 0,},
+        
+
+       
         // Add more questions as needed
       ],
+      saveProgress() {
+        // Save progress to storage
+        this.username = this.currentUsername
+
+        localStorage.setItem("quiz_username", this.username);
+
+        // // Save other progress data if needed
+      },
       loadProgress() {
         // Load progress from storage based on username
-        const savedUsername = localStorage.getItem("quiz_username");
-        if (savedUsername) {
-          this.username = savedUsername;
+        this.username = localStorage.getItem("quiz_username");
+        if (username) {
+          this.username = username;
           // Load other progress data if needed
         }
       },
-      saveProgress() {
-        // Save progress to storage
-        localStorage.setItem("quiz_username", this.username);
-        // Save other progress data if needed
-      },
+      
       startQuiz() {
         this.quizInProgress = true;
         this.quizCompleted = false;
@@ -207,6 +217,7 @@ document.addEventListener("alpine:init", () => {
         this.quizCompleted = false;
         this.currentQuestionIndex = 0;
         this.selectedOption = null;
+        this.username="";
         this.score = 0;
       },
     };
